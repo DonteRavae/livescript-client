@@ -13,6 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      height: {
+        page: "calc(100dvh - 60px)",
+      },
+      animation: {
+        "hard-wrap": "warn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      keyframes: {
+        warn: {
+          "0%": { borderColor: "rgb(220, 38, 38)" },
+          "50%": { borderColor: "transparent" },
+        },
+      },
     },
   },
   plugins: [],

@@ -1,8 +1,9 @@
+// NEXT.JS
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// STYLES
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Logo from "./components/Logo";
+import Dropdown from "./components/Dropdown";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-gray-100/50 min-h-dhv grid grid-rows-[60px_1fr] gap-x-6">
+        <header className="grid sm:grid-cols-[300px_300px] sm:justify-between lg:grid-cols-[300px_1fr_300px] grid-rows-1 px-20 bg-blue-700">
+          <Logo />
+          <form className="items-center hidden lg:flex justify-center w-full h-full">
+            <input
+              type="search"
+              name="broadcastSearch"
+              id="broadcast-search"
+              placeholder="Search Live Broadcasts"
+              className="border max-w-2xl w-full py-1 px-2"
+            />
+          </form>
+          <Dropdown label="Test User">
+            <button className="bg-red-700 w-full h-full text-left p-3">
+              Logout
+            </button>
+          </Dropdown>
+        </header>
+        <aside className="flex flex-col lg:col-span-1 pl-20 text-black">
+          <menu className="w-full"></menu>
+          <section className="w-full">
+            <h3>Create a broadcast to get started</h3>
+          </section>
+        </aside>
+        {children}
+      </body>
     </html>
   );
 }
