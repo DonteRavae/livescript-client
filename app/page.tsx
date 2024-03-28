@@ -1,19 +1,18 @@
-import BroadcastController from "./components/BroadcastController";
-
-const TEST_BROADCAST_SCRIPT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Vitae nunc sed velit dignissim. Donec ultrices tincidunt arcu non sodales neque sodales. Dui accumsan sit amet nulla facilisi morbi tempus iaculis urna. Maecenas pharetra convallis posuere morbi. Vitae semper quis lectus nulla at volutpat. Non consectetur a erat nam. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Quisque non tellus orci ac auctor. Porta non pulvinar neque laoreet. Semper quis lectus nulla at volutpat diam ut. Vitae tortor condimentum lacinia quis vel eros donec ac odio.
-
-Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Tellus orci ac auctor augue mauris augue. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Massa enim nec dui nunc mattis enim ut. Magna etiam tempor orci eu. Arcu dictum varius duis at consectetur. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Odio pellentesque diam volutpat commodo. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Egestas dui id ornare arcu. A cras semper auctor neque vitae tempus quam pellentesque. Tincidunt arcu non sodales neque sodales. Gravida dictum fusce ut placerat. Ut venenatis tellus in metus vulputate eu. Condimentum id venenatis a condimentum vitae sapien. Nunc sed id semper risus. Facilisi nullam vehicula ipsum a arcu cursus vitae. Nunc mi ipsum faucibus vitae.
-
-Euismod quis viverra nibh cras pulvinar mattis nunc sed. Id porta nibh venenatis cras sed felis eget velit aliquet. Quis hendrerit dolor magna eget est lorem ipsum. Donec ultrices tincidunt arcu non sodales neque sodales ut. Maecenas volutpat blandit aliquam etiam. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Eget felis eget nunc lobortis mattis. Enim lobortis scelerisque fermentum dui faucibus in. Morbi leo urna molestie at elementum eu facilisis. Arcu non sodales neque sodales ut etiam sit. In nibh mauris cursus mattis. Sit amet nisl suscipit adipiscing bibendum est. Massa placerat duis ultricies lacus sed turpis. Consequat id porta nibh venenatis cras sed felis. Etiam erat velit scelerisque in dictum non consectetur a. Lorem mollis aliquam ut porttitor leo a diam. Auctor neque vitae tempus quam pellentesque. Sem fringilla ut morbi tincidunt augue interdum.
-
-Habitasse platea dictumst vestibulum rhoncus est. Id semper risus in hendrerit gravida rutrum. Nibh tellus molestie nunc non blandit massa enim nec dui. Ornare arcu odio ut sem nulla pharetra diam. Aliquam sem fringilla ut morbi tincidunt augue interdum. Enim tortor at auctor urna nunc id cursus metus. Et netus et malesuada fames. Sed risus pretium quam vulputate dignissim suspendisse in est. Facilisis gravida neque convallis a. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Pellentesque massa placerat duis ultricies lacus. Vel pharetra vel turpis nunc eget lorem. Ac tortor dignissim convallis aenean et tortor. Urna cursus eget nunc scelerisque. Mauris a diam maecenas sed enim.
-
-Mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing. Nunc sed id semper risus. Urna neque viverra justo nec ultrices dui sapien eget. Turpis egestas integer eget aliquet nibh praesent tristique magna. Ipsum nunc aliquet bibendum enim facilisis gravida. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Porta nibh venenatis cras sed felis eget velit. Maecenas accumsan lacus vel facilisis volutpat est. Ac auctor augue mauris augue neque gravida in fermentum et. Viverra nibh cras pulvinar mattis nunc. Lacus viverra vitae congue eu consequat ac felis donec et. Laoreet sit amet cursus sit amet dictum sit amet justo. Enim facilisis gravida neque convallis a. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Sit amet cursus sit amet dictum sit. Mi tempus imperdiet nulla malesuada pellentesque elit. Facilisis magna etiam tempor orci eu lobortis elementum.`;
-
 export default function Home() {
   return (
-    <main className="h-page w-full pb-10">
-      <BroadcastController broadcastScript={TEST_BROADCAST_SCRIPT} />
-    </main>
+    <div className="bg-white">
+      <section className="h-2/5 border-b-2 border-b-black p-3 text-black">
+        Details
+      </section>
+      <ul className="h-full p-3 text-black">
+        Live Broadcasts List
+        <li>
+          {/* TITLE */}
+          {/* LIVE DURATION */}
+          {/* VIEWER COUNT */}
+          {/* CONTROLLER/PRODUCER - Team and/or User */}
+        </li>
+      </ul>
+    </div>
   );
 }

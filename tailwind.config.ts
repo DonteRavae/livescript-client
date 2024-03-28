@@ -18,11 +18,21 @@ const config: Config = {
       },
       animation: {
         "hard-wrap": "warn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        rotate: "rotate .1s linear forwards",
+        "rotate-reverse": "rotateReverse .1s linear forwards",
       },
       keyframes: {
         warn: {
           "0%": { borderColor: "rgb(220, 38, 38)" },
           "50%": { borderColor: "transparent" },
+        },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-90deg)" },
+        },
+        rotateReverse: {
+          "0%": { transform: "rotate(-90deg)" },
+          "100%": { transform: "rotate(0deg)" },
         },
       },
     },
